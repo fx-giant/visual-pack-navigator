@@ -1,0 +1,26 @@
+<div class="quadrant-properties">
+    <div class="quadrant-properties__databind">
+        <div class="quadrant-properties__databind-content">
+          <div class="quadrant-properties__label" data-bind="text: 'Select Dashboard:'"></div>
+          <div class="quadrant-properties__databind-item">
+            <div style="user-select:none;cursor:pointer;font-size:12px;color:#878787;width:100%;transition: all 0.5s ease-in;margin-bottom: 8px;" class="customDropdown">
+
+            <!-- title -->
+              <div style="display: block;" class="quadrant-properties__source-item waves-effect" data-bind="toggleDropdown: dropdown">
+                <div style="padding-top:6px" data-bind="text: 'Selected ('+selectedCount()+')'"></div>
+                <div style="position:absolute;top:0px;right:0px;" class="quadrant-properties__source-icon fa fa-caret-down"></div>
+              </div>
+
+              <!-- data -->
+              <div data-bind="foreach: dashboardInfo, style:{maxHeight:dropdown(), borderWidth: dropdown() == '0px'? '0':'0 1px 1px 1px'}" style="overflow-y:scroll;border-style: solid;border-color:#d7d7d7;">
+                <div class="quadrant-properties__source-list" style="height:auto;" data-bind="click:$parent.changeDashboardEvent, updateSelection: true">
+                  <span data-bind="text: title"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+    </div>
+</div>

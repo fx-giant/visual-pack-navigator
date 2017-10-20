@@ -1,0 +1,96 @@
+#navigator {
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#navigator ul {
+    padding: 0 0;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    flex-flow: row nowrap;
+}
+
+/*TO CENTRALIZE THINGS*/
+#navigator ul::before, #navigator ul::after {
+    content: ''; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#navigator li {
+    width: 255px;
+    height: 70px;
+
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    white-space: normal;
+    margin: 3px;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+.nav {
+    width: 255px;
+    height: 70px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 10px 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    padding-top: 6px;
+}
+
+.nav.waves-effect.button--white {
+    color: #00acac;
+    border: 2px solid #00acac;
+    background: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.nav.waves-effect.button--white:hover {
+    transition: all 0.3s;
+    color: #FFF;
+    background: #00acac;
+}
+
+.nav.waves-effect.button--white:hover #desc {
+    transition: all 0.3s;
+    color: #FFF;
+}
+
+#title {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.oneline {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#desc {
+    height: 64%;
+    overflow: hidden;
+    font-size: 11px;
+    color: #9A9A9A;
+}

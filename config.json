@@ -1,0 +1,9 @@
+{
+   groupId: "eng.visuals",
+   packageId: "eng.visuals.navigator",
+   visualName: "navigator",
+   displayName: "Navigator",
+   version : "1.0.0",
+   scripts : ["navigator.js"],
+   styles : ["navigator.css"],
+}
